@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bkView"
+        android:layout_width="match_parent"
+        android:layout_height="729dp"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteY="1dp">
+
+        <Button
+            android:id="@+id/button_gpa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/compute_gpa"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/gpa5"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="@+id/gpa5"
+            app:layout_constraintTop_toBottomOf="@+id/gpa5"
+            app:layout_constraintVertical_bias="0.198" />
+
+        <EditText
+            android:id="@+id/gpa1"
+            android:layout_width="205dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="@string/hint_gpa"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/textView7"
+            app:layout_constraintStart_toStartOf="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <EditText
+            android:id="@+id/gpa2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="@string/hint_gpa"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/gpa1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/gpa1"
+            app:layout_constraintTop_toBottomOf="@+id/gpa1" />
+
+        <EditText
+            android:id="@+id/gpa3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="@string/hint_gpa"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/gpa2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/gpa2"
+            app:layout_constraintTop_toBottomOf="@+id/gpa2" />
+
+        <EditText
+            android:id="@+id/gpa4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="@string/hint_gpa"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/gpa3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/gpa3"
+            app:layout_constraintTop_toBottomOf="@+id/gpa3" />
+
+        <EditText
+            android:id="@+id/gpa5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="@string/hint_gpa"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/gpa4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/gpa4"
+            app:layout_constraintTop_toBottomOf="@+id/gpa4"
+            tools:ignore="Deprecated" />
+
+        <TextView
+            android:id="@+id/course1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp"
+            android:text="@string/course1"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/gpa1"
+            app:layout_constraintHorizontal_bias="0.347"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/course2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="@string/course2"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/course1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/course1"
+            app:layout_constraintTop_toBottomOf="@+id/course1" />
+
+        <TextView
+            android:id="@+id/course3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/course3"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/gpa3"
+            app:layout_constraintEnd_toEndOf="@+id/course2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/course2"
+            app:layout_constraintTop_toBottomOf="@+id/course2"
+            app:layout_constraintVertical_bias="0.794" />
+
+        <TextView
+            android:id="@+id/course4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/course4"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/gpa4"
+            app:layout_constraintEnd_toEndOf="@+id/course3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/course3"
+            app:layout_constraintTop_toBottomOf="@+id/course3"
+            app:layout_constraintVertical_bias="0.74" />
+
+        <TextView
+            android:id="@+id/course5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="@string/course5"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/course4"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/course4"
+            app:layout_constraintTop_toBottomOf="@+id/course4" />
+
+        <TextView
+            android:id="@+id/textView_GPA"
+            android:layout_width="172dp"
+            android:layout_height="35dp"
+            android:text="@string/show_gpa"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/button_gpa"
+            app:layout_constraintHorizontal_bias="0.673"
+            app:layout_constraintStart_toStartOf="@+id/button_gpa"
+            app:layout_constraintTop_toBottomOf="@+id/button_gpa"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/app_name_display"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
